@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Zipextractor : Extract (decompress) ZIP files into Google Drive using the Google Drive API">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Zipextractor</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jrnb81988/zipextractor">View on GitHub</a>
+
+          <h1 id="project_title">Zipextractor</h1>
+          <h2 id="project_tagline">Extract (decompress) ZIP files into Google Drive using the Google Drive API</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jrnb81988/zipextractor/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jrnb81988/zipextractor/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="zip-extractor" class="anchor" href="#zip-extractor" aria-hidden="true"><span class="octicon octicon-link"></span></a>ZIP Extractor</h1>
+
+<p>Extract (decompress) ZIP files into Google Drive using the Google Drive API.</p>
+
+<p>This app is deployed at: <a href="http://zip-extractor.appspot.com/">http://zip-extractor.appspot.com/</a>.</p>
+
+<p>This is a pure-Javascript app that makes use of the public Google Drive API to read ZIP files from Google Drive and extract their contents into Google Drive. Hierarchical ZIP files (ZIP files with subfolders) are supported.</p>
+
+<p>The app is based on the drive.file OAuth2 scope, where permission is granted only for individual files that the user authorizes.</p>
+
+<p>ZIP Extractor makes use of CORS (Cross-Origin Resource Sharing) methods for uploading and downloading files from Drive. The app also demonstrates the use of the File Picker and Sharing widgets as part of the Drive API. ZIP extractor also demonstrates how to integrate with the Google Drive web and Android apps.</p>
+
+<p>This app uses the zip.js Javascript-based ZIP library, available on GitHub (<a href="http://gildas-lormeau.github.io/zip.js/">http://gildas-lormeau.github.io/zip.js/</a>).</p>
+
+<p>To run this code yourself, it will need to be hosted somewhere. Options for hosting include Google App Engine, where a simple Python configuration provides an easy-to-use way to expose only static content (in this case, serving the JavaScript). Other alternatives include using a Google Drive public folder to host the files, or your own web server.</p>
+
+<p>In all cases, a configuration will need to be created in the Google Developers Console, as outlined here:
+<a href="https://developers.google.com/drive/web/enable-sdk">https://developers.google.com/drive/web/enable-sdk</a></p>
+
+<p>Note: The resulting App ID, Client ID, and API Key generated as part of that process will need to be put into the your app's configuration (in actual code). For ZIP Extractor, that configuration information in found in 'config.js' under the '/js/zipextractor/' directory.</p>
+
+<h1></h1>
+
+<p>For any questions about ZIP Extractor, please email <a href="mailto:zipextractor@gmail.com">zipextractor@gmail.com</a>.</p>
+
+<p>For technical questions about the Google Drive API, you can post to the Google Drive Developers G+ community:
+<a href="https://plus.sandbox.google.com/communities/107264319205603895037">https://plus.sandbox.google.com/communities/107264319205603895037</a>.</p>
+
+<p>You can also post a question on the Stack Overflow forums:
+<a href="http://stackoverflow.com/questions/tagged/google-drive-sdk">http://stackoverflow.com/questions/tagged/google-drive-sdk</a></p>
+
+<p>Mike Procopio, January 2014
+<a href="mailto:mprocopio@gmail.com">mprocopio@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Zipextractor maintained by <a href="https://github.com/jrnb81988">jrnb81988</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
